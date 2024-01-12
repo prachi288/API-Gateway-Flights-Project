@@ -25,7 +25,7 @@ app.use('/bookingService', createProxyMiddleware({ target: ServerConfig.BOOKING_
 
 app.use('/api', apiRoutes);
 
-app.listen(ServerConfig.PORT, () => {
+app.listen(ServerConfig.PORT, async() => {
     console.log(`Successfully started the server on PORT : ${ServerConfig.PORT}`);
 });
 
